@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import gsap from "gsap";
 
-interface EpochProps {
+interface YearProps {
   startYear: number;
   endYear: number;
 }
 
-const Epoch: React.FC<EpochProps> = ({ startYear, endYear }) => {
+const Year: React.FC<YearProps> = ({ startYear, endYear }) => {
   const startYearRef = useRef<HTMLSpanElement>(null);
   const endYearRef = useRef<HTMLSpanElement>(null);
   const [displayStart, setDisplayStart] = useState(startYear);
@@ -72,15 +72,15 @@ const Epoch: React.FC<EpochProps> = ({ startYear, endYear }) => {
   }, [startYear, endYear]);
 
   return (
-    <div className="epoch">
-      <span ref={startYearRef} className="epoch__year epoch__year--start">
+    <div className="Year">
+      <span ref={startYearRef} className="Year__year Year__year--start">
         {displayStart}
       </span>
-      <span ref={endYearRef} className="epoch__year epoch__year--end">
+      <span ref={endYearRef} className="Year__year Year__year--end">
         {displayEnd}
       </span>
     </div>
   );
 };
 
-export default Epoch;
+export default Year;

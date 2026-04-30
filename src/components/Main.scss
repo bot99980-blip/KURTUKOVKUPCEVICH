@@ -209,7 +209,7 @@ $color-border: #c4cddc;
   }
 }
 
-.epoch {
+.Year {
   position: absolute;
   display: flex;
   align-items: center;
@@ -417,7 +417,7 @@ $color-border: #c4cddc;
     }
   }
 
-  .epoch {
+  .Year {
     gap: 40px;
 
     &__year {
@@ -482,7 +482,7 @@ $color-border: #c4cddc;
     display: none;
   }
 
-  .epoch {
+  .Year {
     position: relative;
     gap: 24px;
 

@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { HistoricalPeriod } from "../data/types";
 import { historicalPeriods } from "../data/periods";
 import Sqr from "./Sqr";
-import Epoch from "./Epoch";
+import Year from "./Year";
 import Pager from "./Pager";
 import "./Main.scss";
 import Swip from "./Swip";
@@ -103,7 +103,7 @@ const Times: React.FC<TimesProps> = ({ periods = historicalPeriods }) => {
             onSelect={handlePeriodChange}
             onHover={setHoveredIndex}
           />
-          <Epoch
+          <Year
             startYear={activePeriod.startYear}
             endYear={activePeriod.endYear}
           />
