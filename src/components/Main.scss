@@ -45,7 +45,7 @@ $color-border: #c4cddc;
 
   &__horizontal-line {
     position: absolute;
-    top: 41.5%;
+    top: 46.5%;
     left: 80px;
     right: 0;
     height: 1px;
@@ -71,7 +71,7 @@ $color-border: #c4cddc;
   }
 
   &__title {
-    font-family: "Inter";
+    font-family: "PT Sans" !important;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -148,8 +148,8 @@ $color-border: #c4cddc;
   }
 
   &__dot {
-    width: 16px;
-    height: 16px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: $color-text-primary;
     border: none;
@@ -317,6 +317,7 @@ $color-border: #c4cddc;
 }
 
 .Swip {
+  width: 70%;
   position: relative;
   padding-right: 60px;
 
@@ -340,14 +341,15 @@ $color-border: #c4cddc;
 
   &__year {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 700;
     color: $color-blue;
     line-height: 1.2;
     letter-spacing: 0.5px;
   }
 
   &__description {
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.5;
     color: $color-text-primary;
   }
