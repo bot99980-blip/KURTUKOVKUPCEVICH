@@ -26,7 +26,7 @@ const Pager: React.FC<PagerProps> = ({
     <div className="pager">
       <div className="pager__counter">
         <span className="pager__current">{formatNumber(currentIndex)}</span>
-        <span className="pager__separator"> / </span>
+        <span className="pager__separator">/</span>
         <span className="pager__total">{formatTotal(totalCount)}</span>
       </div>
 
